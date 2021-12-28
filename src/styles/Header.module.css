@@ -1,0 +1,42 @@
+.header {
+  width: 100%;
+  font-size: 20px;
+  padding: 1em 1em;
+  background-color: #000;
+  border-bottom: 2px solid #fff;
+  color: #bdbdbd;
+}
+
+.navWrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin: 0 auto;
+  max-width: 1280px;
+}
+
+.logo {
+  font-size: 2em;
+  letter-spacing: -0.04em;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.logo:hover {
+  color: #fff;
+}
+.linkList {
+  display: flex;
+  gap: 1.5em;
+}
+
+.linkList a {
+  text-decoration: none;
+  color: #bdbdbd;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.linkList a:hover {
+  color: #fff;
+}
