@@ -1,10 +1,52 @@
 .header {
   width: 100%;
-  background-color: yellow;
+  font-size: 20px;
+  padding: 1em 1em;
+  background-color: #000;
+  border-bottom: 2px solid #fff;
+  color: #fff;
 }
 
-.nav_wrap {
-  max-width: 1280px;
+.navWrap {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
+  margin: 0 auto;
+  max-width: 1280px;
+}
+
+.logo {
+  font-size: 2em;
+  letter-spacing: -0.04em;
+  font-weight: 700;
+}
+
+.linkList {
+  display: flex;
+  gap: 1.5em;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.aboutMe {
+  height: 100vh;
+  width: 100%;
+  background-color: #000;
+}
+
+.skills {
+  height: 100vh;
+  width: 100%;
+  background-color: skyblue;
+}
+
+.projects {
+  height: 100vh;
+  width: 100%;
+  background-color: gold;
 }
