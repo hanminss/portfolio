@@ -4,7 +4,7 @@ import lightThema from "../styles/HL.module.css";
 import darkThema from "../styles/HD.module.css";
 
 export const Landing = ({ dark }: ThemaProps) => {
-  let styles = dark ? darkThema : lightThema;
+  const styles = dark ? darkThema : lightThema;
 
   return (
     <section className={styles.landing}>

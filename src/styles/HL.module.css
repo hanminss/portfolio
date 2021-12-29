@@ -1,4 +1,4 @@
-/* animation */
+/* Header Component*/
 @keyframes nightToDay {
   0% {
     background-color: #000;
@@ -7,6 +7,7 @@
     background-color: #fff;
   }
 }
+
 @keyframes rise {
   from {
     left: 55%;
@@ -17,6 +18,7 @@
     top: 50%;
   }
 }
+
 @keyframes setDown {
   from {
     left: 50%;
@@ -28,7 +30,6 @@
   }
 }
 
-/* Header Component*/
 .header {
   width: 100%;
   font-size: 20px;
@@ -109,6 +110,29 @@
 }
 
 /* Landing Component */
+@keyframes typing1 {
+  0% {
+    width: 0%;
+    border-right: 2px solid black;
+  }
+  100% {
+    width: 100%;
+    border-right: 2px solid black;
+  }
+}
+
+@keyframes typing2 {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+    border-right: 2px solid black;
+  }
+}
 .landing {
   font-size: 20px;
   margin: 0 auto;
@@ -163,25 +187,32 @@
   animation: typing2 4s steps(200);
 }
 
-@keyframes typing1 {
+/* About me Component */
+@keyframes fade {
   0% {
-    width: 0%;
-    border-right: 2px solid black;
+    transform: translate(10px, 10px);
+    opacity: 0;
   }
   100% {
-    width: 100%;
-    border-right: 2px solid black;
+    transform: translate(0px, 0px);
+    opacity: 1;
   }
 }
-@keyframes typing2 {
-  0% {
-    width: 0%;
-  }
-  50% {
-    width: 0%;
-  }
-  100% {
-    width: 100%;
-    border-right: 2px solid black;
-  }
+
+.aboutMe {
+  color: #000;
+  animation: 1s fade;
+  margin: 0 auto;
+  max-width: 1280px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.aboutMeTitle {
+  display: inline-block;
+  font-size: 2em;
+  font-weight: 700;
+  margin: 0.5em 0;
+  padding: 0 0.3em 0.3em 0.3em;
+  border-bottom: 3px solid #000;
 }

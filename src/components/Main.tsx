@@ -17,7 +17,7 @@ export const Main = ({ num, dark }: NumProps2) => {
       {num == 0 ? (
         <Landing dark={dark} />
       ) : num == 1 ? (
-        <AboutMe />
+        <AboutMe dark={dark} />
       ) : num == 2 ? (
         <Skills />
       ) : (
