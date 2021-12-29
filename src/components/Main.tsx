@@ -1,9 +1,16 @@
 import { NumProps2 } from "../pages";
-import styles from "../styles/Main.module.css";
 import { AboutMe } from "./AboutMe";
 import { Landing } from "./Landing";
 import { Skills } from "./Skills";
-export const Main = ({ num }: NumProps2) => {
+import darkThema from "../styles/HD.module.css";
+import lightThema from "../styles/HL.module.css";
+
+export interface ThemaProps {
+  dark: boolean;
+}
+
+export const Main = ({ num, dark }: NumProps2) => {
+  const styles = dark ? darkThema : lightThema;
   return (
     <main id="main" className={styles.main}>
       {num == 0 ? (

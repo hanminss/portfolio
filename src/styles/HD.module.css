@@ -1,10 +1,10 @@
 /* animation */
 @keyframes dayToNight {
   from {
-    background-color: white;
+    background-color: #fff;
   }
   to {
-    background-color: black;
+    background-color: #000;
   }
 }
 @keyframes rise {
@@ -38,7 +38,7 @@
   border-bottom: 2px solid #fff;
   color: #bdbdbd;
   overflow: hidden;
-  animation: dayToNight 2s;
+  animation: dayToNight 1s;
 }
 
 .navWrap {
@@ -98,4 +98,13 @@
 
 .darkBtn:hover {
   transform: translate(-50%, -50%) scale(1.2);
+}
+
+/* Main Component */
+.main {
+  height: calc(100vh - 82px);
+  font-size: 20px;
+  padding: 1em 1em;
+  background-color: #000;
+  animation: dayToNight 1.2s;
 }

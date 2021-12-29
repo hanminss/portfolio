@@ -10,6 +10,7 @@ export interface NumProps {
 }
 export interface NumProps2 {
   num: number;
+  dark: boolean;
 }
 
 const Home: NextPage = () => {
@@ -31,7 +32,7 @@ const Home: NextPage = () => {
         handleNumChange={handleNumChange}
         handleDarkChange={handleDarkChange}
       ></Header>
-      <Main num={num} />
+      <Main num={num} dark={dark} />
       {/* <footer id="xx" className="abc">
         <p>&copy; hanminsss</p>
         <a href="#">github</a>

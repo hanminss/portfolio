@@ -99,3 +99,11 @@
   transform: translate(-50%, -50%);
   animation: setDown 2s;
 }
+/* Main Component */
+.main {
+  height: calc(100vh - 82px);
+  font-size: 20px;
+  padding: 1em 1em;
+  background-color: #fff;
+  animation: nightToDay 1.2s;
+}
