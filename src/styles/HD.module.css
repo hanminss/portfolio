@@ -1,4 +1,35 @@
-/* Header */
+/* animation */
+@keyframes dayToNight {
+  from {
+    background-color: white;
+  }
+  to {
+    background-color: black;
+  }
+}
+@keyframes rise {
+  from {
+    left: 55%;
+    top: 200%;
+  }
+  to {
+    left: 50%;
+    top: 50%;
+  }
+}
+
+@keyframes setDown {
+  from {
+    left: 50%;
+    top: 50%;
+  }
+  to {
+    left: 45%;
+    top: 300%;
+  }
+}
+
+/* Header Component */
 .header {
   width: 100%;
   font-size: 20px;
@@ -6,10 +37,13 @@
   background-color: #000;
   border-bottom: 2px solid #fff;
   color: #bdbdbd;
+  overflow: hidden;
+  animation: dayToNight 2s;
 }
 
 .navWrap {
   display: flex;
+  position: relative;
   justify-content: space-between;
   align-items: baseline;
   margin: 0 auto;
@@ -26,6 +60,7 @@
 .logo:hover {
   color: #fff;
 }
+
 .linkList {
   display: flex;
   gap: 1.5em;
@@ -40,4 +75,27 @@
 
 .linkList a:hover {
   color: #fff;
+}
+
+.lightBtn,
+.darkBtn {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.lightBtn {
+  left: 45%;
+  top: 200%;
+  animation: setDown 2s;
+}
+
+.darkBtn {
+  left: 50%;
+  top: 50%;
+  animation: rise 2s;
+}
+
+.darkBtn:hover {
+  transform: translate(-50%, -50%) scale(1.2);
 }

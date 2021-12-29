@@ -24,10 +24,6 @@ const Home: NextPage = () => {
     console.log(dark);
   };
 
-  useEffect(() => {
-    // Check if document is finally loaded
-  }, []);
-
   return (
     <>
       <Header

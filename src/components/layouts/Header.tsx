@@ -15,7 +15,8 @@ export const Header = ({
         <h1 className={styles.logo} onClick={() => handleNumChange(0)}>
           hanminsss
         </h1>
-        {dark ? (
+
+        <div className={styles.darkBtn}>
           <Image
             src="/images/moon.png"
             alt="sum"
@@ -23,7 +24,8 @@ export const Header = ({
             height={50}
             onClick={() => handleDarkChange()}
           />
-        ) : (
+        </div>
+        <div className={styles.lightBtn}>
           <Image
             src="/images/sun.png"
             alt="sum"
@@ -31,7 +33,7 @@ export const Header = ({
             height={50}
             onClick={() => handleDarkChange()}
           />
-        )}
+        </div>
 
         <nav className={styles.nav}>
           <ul className={styles.linkList}>
