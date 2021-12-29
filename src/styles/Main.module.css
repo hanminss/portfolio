@@ -1,0 +1,10 @@
+.main {
+  height: calc(100vh - 82px);
+  font-size: 20px;
+  padding: 1em 1em;
+  background-color: #000;
+}
+
+#xxx {
+  background-color: red;
+}
