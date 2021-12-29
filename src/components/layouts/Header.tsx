@@ -1,5 +1,5 @@
 import { NumProps } from "../../pages";
-
+import Image from "next/image";
 import darkThema from "../../styles/HD.module.css";
 import lightThema from "../../styles/HL.module.css";
 
@@ -15,7 +15,23 @@ export const Header = ({
         <h1 className={styles.logo} onClick={() => handleNumChange(0)}>
           hanminsss
         </h1>
-        <button onClick={() => handleDarkChange()}>dark </button>
+        {dark ? (
+          <Image
+            src="/images/moon.png"
+            alt="sum"
+            width={50}
+            height={50}
+            onClick={() => handleDarkChange()}
+          />
+        ) : (
+          <Image
+            src="/images/sun.png"
+            alt="sum"
+            width={50}
+            height={50}
+            onClick={() => handleDarkChange()}
+          />
+        )}
 
         <nav className={styles.nav}>
           <ul className={styles.linkList}>
