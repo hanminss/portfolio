@@ -11,10 +11,11 @@ export interface ThemaProps {
 
 export const Main = ({ num, dark }: NumProps2) => {
   const styles = dark ? darkThema : lightThema;
+
   return (
     <main id="main" className={styles.main}>
       {num == 0 ? (
-        <Landing />
+        <Landing dark={dark} />
       ) : num == 1 ? (
         <AboutMe />
       ) : num == 2 ? (
