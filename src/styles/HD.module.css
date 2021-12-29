@@ -208,9 +208,35 @@
 
 .aboutMeTitle {
   display: inline-block;
-  font-size: 2em;
-  font-weight: 700;
+  font-size: 3em;
+  font-weight: 900;
   margin: 0.5em 0;
   padding: 0 0.3em 0.3em 0.3em;
   border-bottom: 3px solid #fff;
+}
+
+.infoCards {
+  margin-top: 5em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 5em;
+  justify-items: center;
+  justify-content: center;
+}
+
+.infoCard {
+  min-width: 300px;
+  display: flex;
+  text-align: start;
+  gap: 1em;
+}
+
+.awesomIcon {
+  display: inline-block;
+}
+
+.cardTitle {
+  font-size: 1.3em;
+  font-weight: 600;
+  margin-bottom: 0.3em;
 }
