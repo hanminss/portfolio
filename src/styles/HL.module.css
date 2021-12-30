@@ -267,3 +267,65 @@
   font-weight: 600;
   margin-bottom: 0.3em;
 }
+/* Skills Component */
+.skills {
+  color: #000;
+  margin: 0 auto;
+  max-width: 1280px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.skillsTitle {
+  display: inline-block;
+  font-size: 3em;
+  font-weight: 900;
+  margin: 0.5em 0;
+  padding: 0 0.3em 0.3em 0.3em;
+  border-bottom: 3px solid #000;
+  animation: fade 0.3s;
+}
+
+.boxWrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.techBox {
+  width: 30%;
+  background-color: #fff;
+  color: black;
+  border-radius: 20px;
+  padding: 0.9em;
+  opacity: 0;
+  border: 1px solid #bdbdbd;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.2);
+}
+
+.techBox:nth-child(1) {
+  animation: 0.3s fade forwards;
+  animation-delay: 0.3s;
+}
+.techBox:nth-child(2) {
+  animation: 0.3s fade forwards;
+  animation-delay: 0.6s;
+}
+.techBox:nth-child(3) {
+  animation: 0.3s fade forwards;
+  animation-delay: 0.9s;
+}
+
+.boxTitle {
+  display: inline-block;
+  font-size: 1.3em;
+  font-weight: 700;
+  padding: 0 0.3em 0.3em 0.3em;
+  border-bottom: 2px solid red;
+  margin-bottom: 0.3em;
+}
+
+.ImgWrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px 20px;
+}

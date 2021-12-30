@@ -19,7 +19,7 @@ export const Main = ({ num, dark }: NumProps2) => {
       ) : num == 1 ? (
         <AboutMe dark={dark} />
       ) : num == 2 ? (
-        <Skills />
+        <Skills dark={dark} />
       ) : (
         <section className={styles.projects}>
           <p>프로젝트 페이지</p>
