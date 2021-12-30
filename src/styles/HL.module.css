@@ -35,7 +35,7 @@
   font-size: 20px;
   padding: 1em 1em;
   background-color: #fff;
-  border-bottom: 2px solid #000;
+  /* border-bottom: 2px solid #000; */
   color: #777;
   overflow: hidden;
   overflow: hidden;
@@ -102,7 +102,7 @@
 }
 /* Main Component */
 .main {
-  height: calc(100vh - 82px);
+  height: calc(100vh - 80px);
   font-size: 20px;
   padding: 1em 1em;
   background-color: #fff;

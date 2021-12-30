@@ -10,7 +10,6 @@ import {
   faEnvelope,
   faGraduationCap,
 } from "@fortawesome/free-solid-svg-icons";
-
 export const AboutMe = ({ dark }: ThemaProps) => {
   const styles = dark ? darkThema : lightThema;
   return (
@@ -83,12 +82,6 @@ export const AboutMe = ({ dark }: ThemaProps) => {
             <p>경기대학교 컴퓨터 공학</p>
           </div>
         </div>
-
-        {/* <FontAwesomeIcon icon={faBirthdayCake} />
-        <FontAwesomeIcon icon={faHome} />
-        <FontAwesomeIcon icon={faMobileAlt} />
-        <FontAwesomeIcon icon={faEnvelope} />
-        <FontAwesomeIcon icon={faGraduationCap} /> */}
       </div>
     </section>
   );
